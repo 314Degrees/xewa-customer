@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XEWA</title>
+	<link rel="stylesheet" href="css/font_awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/onsenui.min.css">
+	<link rel="stylesheet" href="css/onsen-css-components.min.css">
+	<link rel="stylesheet" href="css/user.css">
+	<script src="js/onsenui.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<ons-navigator swipeable id="myNavigator">
+		
+	</ons-navigator>
+
+	<template id="landing.html">
+		<ons-page id="landing">
+			<ons-toolbar>
+				<div class="center">XEWA</div>
+			</ons-toolbar>
+
+			<ons-tabbar swipeable position="top">
+				<ons-tab page="home.html" label="Home" icon="md-home" active></ons-tab>
+				<ons-tab page="transaction.html" label="Transaction" icon="md-assignment"></ons-tab>
+				<ons-tab page="history.html" label="History" icon="md-time-restore"></ons-tab>
+			</ons-tabbar>
+		</ons-page>
+	</template>
+
+	<template id="home.html">
+		<ons-page id="home">
+			<div class="loaderHolder" id="costumeLoader">
+				<ons-progress-circular indeterminate></ons-progress-circular>
+				<span>Loading data ...</span>
+			</div>
+			<div style="height: 200px; padding: 1px 0 0 0;" id="costumeHolder">
+				
+			</div>
+		</ons-page>
+	</template>
+
+	<template id="transaction.html">
+		<ons-page id="transaction">
+			<div class="loaderHolder" id="transactionLoader">
+				<ons-progress-circular indeterminate></ons-progress-circular>
+				<span>Loading data ...</span>
+			</div>
+			<div style="height: 200px; padding: 1px 0 0 0;" id="transactionHolder">
+				
+			</div>
+		</ons-page>
+	</template>
+
+	<template id="history.html">
+		<ons-page id="history">
+			<div style="height: 200px; padding: 8px; width: 95%;">
+				<table class="table-fill">
+					<thead>
+						<tr>
+							<th class="text-left">Tx ID</th>
+							<th class="text-left">From</th>
+							<th class="text-left">Date</th>
+							<th class="text-left">Total</th>
+						</tr>
+					</thead>
+					<tbody class="table-hover" id="historyHolder">
+						
+					</tbody>
+				</table>
+			</div>
+			<div class="loaderHolder" id="historyLoader">
+				<ons-progress-circular indeterminate></ons-progress-circular>
+				<span>Loading data ...</span>
+			</div>
+		</ons-page>
+	</template>
+
+	<template id="login.html">
+		<ons-page>
+			<div id="loginBG">
+				<div id="loginFormArea">
+					<div style="text-align: center; margin-top: 30px;">
+						<p>
+							<ons-input id="username" class="loginInput" modifier="underbar" placeholder="Username" float></ons-input>
+						</p>
+						<p>
+							<ons-input id="password" class="loginInput" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+						</p>
+						<p style="margin-top: 30px; padding: 0 25% 0 25%">
+							<ons-button id="loginButton" modifier="large" onclick="verify();">Sign in</ons-button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</ons-page>
+	</template>
+
+	<template id="detailCostume.html">
+		<ons-page id="detailCostume">
+			<ons-toolbar>
+				<div class="left"><ons-back-button>Page 1</ons-back-button></div>
+				<div class="center">Detail Costume</div>
+			</ons-toolbar>
+
+			<div class="loaderHolder" id="detailCostumeLoader">
+				<ons-progress-circular indeterminate></ons-progress-circular>
+				<span>Loading data ...</span>
+			</div>
+			<div style="height: 200px; padding: 1px 0 0 0;" id="detailCostumeHolder">
+				
+			</div>
+		</ons-page>
+	</template>
+
+	<template id="detailTransaction.html">
+		<ons-page id="detailTransaction">
+			<ons-toolbar>
+				<div class="left"><ons-back-button>Page 1</ons-back-button></div>
+				<div class="center">Detail Transaction</div>
+			</ons-toolbar>
+
+			<div class="loaderHolder" id="detailTransactionLoader">
+				<ons-progress-circular indeterminate></ons-progress-circular>
+				<span>Loading data ...</span>
+			</div>
+			<div style="height: 200px; padding: 1px 0 0 0;" id="detailTransactionHolder">
+				
+			</div>
+		</ons-page>
+	</template>
+
+	<template id="editCostume.html">
+		<ons-page id="editCostume">
+			<ons-toolbar>
+				<div class="left"><ons-back-button>Page 1</ons-back-button></div>
+				<div class="center">Edit Costume</div>
+			</ons-toolbar>
+
+			<div id="editCostumeHolder">
+				
+			</div>
+		</ons-page>
+	</template>
+	<script src="js/main.js"></script>
+</body>
+</html>
