@@ -9,10 +9,6 @@
 
 	<name>XEWA</name>
 
-	<preference name="windows-target-version" value="10.0"/>
-	<preference name="windows-appx-target" value="uap" />
-	<preference name="windows-arch" value="anycpu" />
-
 	<preference name="orientation" value="portrait"/>
 	<preference name="fullscreen" value="true"/>
 	<preference name="KeepRunning" value="false"/>
@@ -35,13 +31,4 @@
 	<splash src="res/android/splash/ldpi.png" platform="android" qualifier="ldpi" />
 	<splash src="res/android/splash/mdpi.png" platform="android" qualifier="mdpi" />
 	<splash src="res/android/splash/hdpi.png" platform="android" qualifier="hdpi" />
-
-	<icon platform="winphone" width="150" height="150" src="res/windows/Square150x150Logo.scale-100.png" />
-	<icon platform="winphone" width="360" height="360" src="res/windows/Square150x150Logo.scale-240.png" />
-	<icon platform="winphone" width="71"  height="71"  src="res/windows/Square71x71Logo.scale-100.png" />
-	<icon platform="winphone" width="170" height="170" src="res/windows/Square71x71Logo.scale-240.png" />
-	<icon platform="winphone" width="310" height="150" src="res/windows/Wide310x150Logo.scale-100.png" />
-	<icon platform="winphone" width="744" height="360" src="res/windows/Wide310x150Logo.scale-240.png" />
-	<icon platform="winphone" width="310" height="310" src="res/windows/Square310x310Logo.scale-100.png" />
-	<splash platform="winphone" width="620"  height="300"  src="res/windows/SplashScreen.scale-100.png" />
 </widget>
