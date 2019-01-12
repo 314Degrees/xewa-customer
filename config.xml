@@ -3,7 +3,7 @@
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
 	id          = "com.Degrees314.XewaCustomer"
 	versionCode = "10"
-	version     = "0.4.7" >
+	version     = "0.4.8" >
 
 	<!-- versionCode is optional and Android only -->
 
@@ -41,5 +41,5 @@
 	<allow-intent href="http://*/*" />
 	<allow-navigation href="https://*/*" />
 	<allow-navigation href="http://*/*" />
-	<preference name="StatusBarBackgroundColor" value="#c40d29" />
+	<preference name="StatusBarBackgroundColor" value="#b40c26" />
 </widget>
