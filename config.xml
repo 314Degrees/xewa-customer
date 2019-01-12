@@ -34,10 +34,12 @@
 	
 	<plugin name="cordova-plugin-inappbrowser" />
 	<plugin name="cordova-plugin-whitelist" version="1" />
+	<plugin name="cordova-plugin-statusbar" spec="~2.4.2" />
 
 	<access origin="*" />
 	<allow-intent href="https://*/*" />
 	<allow-intent href="http://*/*" />
 	<allow-navigation href="https://*/*" />
 	<allow-navigation href="http://*/*" />
+	<preference name="StatusBarBackgroundColor" value="#c40d29" />
 </widget>
