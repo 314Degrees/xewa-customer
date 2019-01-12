@@ -3,7 +3,7 @@
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
 	id          = "com.Degrees314.XewaCustomer"
 	versionCode = "10"
-	version     = "0.4.5" >
+	version     = "0.4.7" >
 
 	<!-- versionCode is optional and Android only -->
 
