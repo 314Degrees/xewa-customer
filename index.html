@@ -24,6 +24,7 @@
 				<ons-tab page="home.html" label="Home" icon="md-home" active></ons-tab>
 				<ons-tab page="transaction.html" label="Transaction" icon="md-assignment"></ons-tab>
 				<ons-tab page="history.html" label="History" icon="md-time-restore"></ons-tab>
+				<ons-tab page="profile.html" label="Profile" icon="md-account"></ons-tab>
 			</ons-tabbar>
 		</ons-page>
 	</template>
@@ -82,19 +83,66 @@
 				<div id="loginFormArea">
 					<div style="text-align: center; margin-top: 30px;">
 						<p>
-							<ons-input id="username" class="loginInput" modifier="underbar" placeholder="Username" float></ons-input>
+							<ons-input id="username" class="homeInput" modifier="underbar" placeholder="Username" float></ons-input>
 						</p>
 						<p>
-							<ons-input id="password" class="loginInput" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+							<ons-input id="password" class="homeInput" modifier="underbar" type="password" placeholder="Password" float></ons-input>
 						</p>
 						<p style="margin-top: 30px; padding: 0 25% 0 25%">
 							<ons-button id="loginButton" modifier="large" onclick="verify();">Sign in</ons-button>
+						</p>
+						<p style="margin-top: 30px; padding: 0 25% 0 25%; color: #f9a4b1;">
+							<span>Belum punya akun? <a onclick="fn.load('register.html');" style="text-decoration: none; color: #fcd4da;">Daftar</a></span>
 						</p>
 					</div>
 				</div>
 			</div>
 		</ons-page>
 	</template>
+
+	<template id="register.html">
+		<ons-page id="register">
+			<div id="registerBG">
+				<div id="registerFormArea">
+					<h1>Register</h1>
+					<div style="text-align: center; margin-top: 30px;">
+						<p>
+							<ons-input id="registerFullname" class="homeInput" modifier="underbar" placeholder="Full name" float></ons-input>
+						</p>
+						<p>
+							<ons-input id="registerUsername" class="homeInput" modifier="underbar" placeholder="Username" float></ons-input>
+						</p>
+						<p>
+							<ons-input id="registerPassword" class="homeInput" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+						</p>
+						<p>
+							<ons-input id="registerEmail" class="homeInput" modifier="underbar" placeholder="Email" float></ons-input>
+						</p>
+						<p>
+							<ons-input id="registerPhone" class="homeInput" modifier="underbar" placeholder="Phone" float></ons-input>
+						</p>
+						<p>
+							<ons-input id="registerAddress" class="homeInput" modifier="underbar" placeholder="Address" float></ons-input>
+						</p>
+						<p style="margin-top: 30px; padding: 0 25% 0 25%">
+							<ons-button id="loginButton" modifier="large" onclick="addCustomer();">Sign up</ons-button>
+						</p>
+						<p style="margin-top: 30px; padding: 0 25% 0 25%; color: #f9a4b1;">
+							<span>Sudah punya akun? <a onclick="document.getElementById('myNavigator').popPage()" style="text-decoration: none; color: #fcd4da;">Masuk</a></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</ons-page>
+	</template>
+
+	<ons-modal direction="up" id="loaderOverlay">
+		<div style="text-align: center">
+			<p>
+				<ons-icon icon="md-spinner" size="28px" spin></ons-icon> Loading...
+			</p>
+		</div>
+	</ons-modal>
 
 	<template id="detailCostume.html">
 		<ons-page id="detailCostume">
@@ -138,6 +186,18 @@
 			</ons-toolbar>
 
 			<div id="editCostumeHolder">
+				
+			</div>
+		</ons-page>
+	</template>
+
+	<template id="profile.html">
+		<ons-page id="profile">
+			<div class="loaderHolder" id="profileLoader">
+				<ons-progress-circular indeterminate></ons-progress-circular>
+				<span>Loading data ...</span>
+			</div>
+			<div style="height: 200px; padding: 1px 0 0 0;" id="profileHolder">
 				
 			</div>
 		</ons-page>

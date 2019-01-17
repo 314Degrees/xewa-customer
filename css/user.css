@@ -12,11 +12,29 @@ a {
 	background-size: cover;
 }
 
+#registerBG {
+	width: 100%;
+	height: 100%;
+	background-color: #E40F30;
+}
+
+#registerFormArea {
+	height: 200px;
+	width: 100%;
+	padding: 1px 0 0 0;
+	position: absolute;
+	margin-top: 10%;
+}
+
+#registerFormArea h1 {
+	text-align: center;
+	color: white;
+}
+
 #loginFormArea {
 	height: 200px;
 	width: 100%;
 	padding: 1px 0 0 0;
-	/*background-color: blue;*/
 	position: absolute;
 	margin-top: 90%;
 }
@@ -26,21 +44,21 @@ a {
 	color: #E40F30;
 }
 
-.loginInput input {
+.homeInput input {
 	color: #fff;
 	background-image: linear-gradient(to top,transparent 1px, #ccc 1px);
 	height: 35px;
 }
 
-.loginInput input:focus {
+.homeInput input:focus {
 	background-image: linear-gradient(#fff,#fff),linear-gradient(to top,transparent 1px,#ccc 1px);
 }
 
-.loginInput .text-input--material__label--active {
+.homeInput .text-input--material__label--active {
 	color: #fff;
 }
 
-.loginInput .text-input--material__label {
+.homeInput .text-input--material__label {
 	top: 7px;
 }
 
